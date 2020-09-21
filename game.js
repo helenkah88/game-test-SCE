@@ -1,4 +1,4 @@
-// addind event handlers to draggable elements
+// adding event handlers to draggable elements
 document.querySelectorAll('.ball').forEach(elem => {
     elem.addEventListener('dragstart', dragStart);
     elem.addEventListener('dragend', dragEnd);
@@ -83,7 +83,7 @@ function drop(e) {
 
     if (side === 'right') {
       score[side]++;
-      
+
       updateScore(side, score[side]);
 
       document.getElementById('right-ball-icons').appendChild(clone);
