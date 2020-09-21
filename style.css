@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+#field {
+  position: relative;
+  height: 640px;
+  border-radius: 20px;
+  background: #709B5E;
+  box-shadow: 0px 0px 35px 3px #aaa;
+}
+
+.field-divider::before,
+.field-divider::after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+.field-divider {
+  position: absolute;
+  width: 6px;
+  height: 640px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #BDCEB6;
+}
+
+.field-divider::before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #BDCEB6;
+}
+
+.field-divider::after {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: transparent;
+  border: 6px solid #BDCEB6;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.goal {
+  position: absolute;
+  background: #BDCEB6;
+  width: 150px;
+  height: 382px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#left-goal {
+  left: 0;
+}
+
+#right-goal {
+  right: 0;
+}
+
+.ball {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  color: white;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#ball-1 {
+  left: 10%;
+  background: #214BF2;
+}
+
+#ball-2 {
+  left: 20%;
+  background: #E23FB7;
+}
+
+#ball-3 {
+  left: 30%;
+  background: #EBFB10;
+}
+
+#ball-4 {
+  left: 40%;
+  background: #E58F1F;
+}
+
+#ball-5 {
+  left: 50%;
+  background: #75E23F;
+}
+
+#ball-6 {
+  left: 60%;
+  background: #1CECBB;
+}
+
+#info {
+  display: flex;
+  margin: 20px 0 30px 0;
+  justify-content: space-around;
+  font-size: 24px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+#info > div {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#score-info {
+  font-size: 54px;
+}
+
+.ball-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.ball-icons > div {
+  margin: 5px !important;
+}

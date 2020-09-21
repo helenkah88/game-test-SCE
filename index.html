@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+<body>
+  <div class="container">
+    <div id="info">
+      <div id="left-column-info">
+        <div>in the left goal</div>
+        <div id="left-ball-icons" class="ball-icons"></div>
+      </div>
+      <div id="score-info">
+        <div>score</div>
+        <div id="left-score" style="display: inline-block;">0</div> : <div id="right-score" style="display: inline-block;">0</div>
+      </div>
+      <div id="right-column-info">
+        <div>in the right goal</div>
+        <div id="right-ball-icons" class="ball-icons"></div>
+      </div>
+    </div>
+    <div id="field" ondragover="dragOver(event)" ondrop="drop(event)">
+      <div class="field-divider"></div>
+      <div id="left-goal" class="goal" data-target="left"></div>
+      <div id="right-goal" class="goal" data-target="right"></div>
+      <div id="ball-1" class="ball" draggable="true">div</div>
+      <div id="ball-2" class="ball" draggable="true">a</div>
+      <div id="ball-3" class="ball" draggable="true">b</div>
+      <div id="ball-4" class="ball" draggable="true">p</div>
+      <div id="ball-5" class="ball" draggable="true">i</div>
+      <div id="ball-6" class="ball" draggable="true">span</div>
+    </div>
+  </div>
+  <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
